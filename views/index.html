@@ -1,6 +1,10 @@
 <html lang="en">
 <head class="mainContainer">
-  
+  <!-- jQUERY -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 <!-- BOOTSTRAP CDN -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <!-- FONT AWESOME -->
@@ -11,6 +15,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <!-- CUSTOM CSS -->
 <link rel="stylesheet" href="/public/css/main.css">
+  
+  
+    <script> 
+    $(function(){
+      $("#DivContent").load("/views/componentes/navBar.html"); 
+    });
+    </script> 
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +41,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <div w3-include-html="/views/componentes/navBar.html"></div>
+  <div id="DivContent"></div>
   <div w3-include-html="/views/componentes/slide.html"></div>
   <header class="bg-dark">
   
@@ -53,15 +64,7 @@
     
   </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom JavaScript for this theme -->
-  <script src="js/scrolling-nav.js"></script>
 
 </body>
 
