@@ -1,11 +1,7 @@
 <html lang="en">
 <script src="ejs.js"></script>
 <head class="mainContainer">
-  <script>
-  var html = ejs.render('componentes/head', {postArr: postArr});
-
-$('#mainContainer').html(html);
-</script>
+  <div w3-include-html="componentes/head.ejs"></div>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
